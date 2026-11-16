@@ -1,0 +1,63 @@
+{
+  "projects": [
+    {
+      "id": "site-esiee",
+      "name": "Site ESIEE",
+      "description": "Refonte du site web de l'ecole pour ameliorer son accessibilite."
+    },
+    {
+      "id": "application-mobile",
+      "name": "Application mobile",
+      "description": "Conception d'une application mobile pour organiser les revisions."
+    },
+    {
+      "id": "portfolio",
+      "name": "Portfolio",
+      "description": "Creation d'un portfolio pour presenter les projets realises."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "projectId": "site-esiee",
+      "title": "Auditer les pages existantes",
+      "status": "done",
+      "priority": 1
+    },
+    {
+      "id": "task-2",
+      "projectId": "site-esiee",
+      "title": "Creer les maquettes responsive",
+      "status": "in-doing",
+      "priority": 2
+    },
+    {
+      "id": "task-3",
+      "projectId": "site-esiee",
+      "title": "Integrer la page d'accueil",
+      "status": "todo",
+      "priority": 1
+    },
+    {
+      "id": "task-4",
+      "projectId": "application-mobile",
+      "title": "Definir les parcours utilisateurs",
+      "status": "in-doing",
+      "priority": 2
+    },
+    {
+      "id": "task-5",
+      "projectId": "application-mobile",
+      "title": "Configurer la navigation",
+      "status": "todo",
+      "priority": 3
+    },
+    {
+      "id": "task-6",
+      "projectId": "portfolio",
+      "title": "Selectionner les projets a presenter",
+      "status": "done",
+      "priority": 2
+    }
+  ]
+}

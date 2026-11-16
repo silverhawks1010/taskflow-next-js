@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TaskFlow Next.js
 
-## Getting Started
+Version Next.js du TP3 React, réalisée avec l’App Router. La version Vite d’origine reste indépendante dans `taskflow/`.
 
-First, run the development server:
+## Installation et lancement
 
-```bash
+Prérequis : Node.js 20.9 ou supérieur et npm.
+
+```sh
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrir <http://localhost:3000>. Les exemples de projets et tâches sont dans `db.json`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Fonctionnalités
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Liste des projets, création, modification et suppression.
+- Tâches par projet : ajout avec priorité et échéance, changement de statut et suppression.
+- Filtres par statut et tri des tâches par échéance.
+- Statistiques par statut et par projet, page À propos et page 404.
+- Minuteur de concentration et thème clair/sombre mémorisé.
+- Pages rendues sur le serveur ; seuls les composants interactifs sont envoyés au navigateur.
 
-## Learn More
+Les actions écrivent dans le fichier local `db.json` : cette persistance sert à l’exercice en local. Pour un déploiement multi-instance, remplacer ce stockage fichier par une base de données hébergée.
 
-To learn more about Next.js, take a look at the following resources:
+## Vérifications
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```sh
+npm run lint
+npm run build
+```
